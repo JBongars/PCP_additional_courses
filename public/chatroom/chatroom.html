@@ -1,0 +1,13 @@
+<div class="container">
+    <h1>CHATROOM</h1>
+
+    <hr/>
+
+    <form ng-submit="ctrl.send">
+        <input type="text" name="message" id="input-message" ng-model="ctrl.message" />
+        <input type="submit" />
+    </form>
+    <ul>
+        <li ng-repeat="message in ctrl.messages">{{ctrl.message}}</li>
+    </ul>
+</div>
